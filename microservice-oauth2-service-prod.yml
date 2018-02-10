@@ -12,6 +12,13 @@ druid:
 redis:
     host: ping.yzkj.pub
     port: 6379
+    database:0
+    pool:
+      max-active:8
+      max-wait:-1
+      max-idle:500
+      min-idle:0
+    timeout:0
 
 server:
   port: 9997
